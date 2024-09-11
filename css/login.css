@@ -1,0 +1,70 @@
+:root{
+    --main-color:#fab826;
+    --second-color:#d7d2cc;
+    --third-color:#fe9124;
+}
+body{
+    height: 100vh;
+    background-image: url(../imgs/bg.jpg);
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+form{
+    background-color: var(--second-color);
+    padding: 20px 10px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 20%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-align: center;
+}
+
+form label{
+    display: block;
+    margin-bottom: 20px;
+}
+
+form input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid;
+    background-color: var(--second-color);
+}
+form input:focus{
+    border-bottom: 3px solid var(--main-color);
+}
+.container{
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+form button[type='submit']{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-weight: bold;
+}
+form button[type='submit'] a{
+    color: black;
+    text-decoration: none;
+}
+
+.sign-up a{
+    color: var(--third-color);
+}
